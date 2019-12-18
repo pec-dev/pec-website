@@ -1,0 +1,29 @@
+/*START:  DEPARTMENT PAGE  - TITLE/HEADER - TIMER  */
+
+.date-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0px 25px;
+}
+
+#date {
+  padding: 0 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  min-width: fit-content;
+}
+
+.hr2 {
+  display: inline-block;
+  width: 40%;
+  border-color: #000;
+}
+@media (max-width: 400px) {
+  #date {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+
+/* END :  DEPARTMENT PAGE  - TITLE/HEADER - TIMER  */
