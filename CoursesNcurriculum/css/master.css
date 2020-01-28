@@ -1,0 +1,47 @@
+/*START:  DEPARTMENT PAGE  - TITLE/HEADER - TIMER  */
+
+.faculty-header{
+    border-top:3px double black;
+    border-bottom:3px double black;
+    font-family: 'Oswald',sans-serif;
+    text-align: center;
+    margin: 20px 5%;
+    padding-top:0px;
+    padding-bottom:0px;
+    
+}
+.faculty-header h2{
+    margin-top: 10px;
+}
+ @media (max-width: 500px){
+    .faculty-header h2{
+        font-size: 20px;
+    }
+}
+.date-container{
+    display:flex;
+    align-items: center; /* to vertically align*/
+    text-align: center;
+    padding: 0px 25px;
+}
+
+#date{
+    padding: 0 15px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 20px;
+    min-width: fit-content;
+}
+
+.hr2{
+    display: inline-block;
+    width:40%;
+    border-color: #000;
+}
+@media (max-width: 400px) {
+    #date{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
+
+/* END :  DEPARTMENT PAGE  - TITLE/HEADER - TIMER  */

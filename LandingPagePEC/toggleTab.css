@@ -1,0 +1,48 @@
+
+.tab {
+overflow: hidden;
+border-bottom: 1px solid #ccc;
+background-color: #fff;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 12px 20px;
+transition: 0.1s;
+/* width: 150px; */
+/* border: 1px solid cyan; */
+}
+
+.noticeLabel{
+    padding: 10px 20px;
+    color: #707070;
+    font-size: small;
+    /* line-height: initial; */
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+.tabcontent {
+display: none;
+/* padding: 6px 12px; */
+border: 1px solid #ccc;
+border-top: none;
+}
+
+.tab #b1, .tab #b2{
+    border-bottom: 3px solid white;
+}
+.tab #b1.active {
+border-bottom: 3px solid #ebdd22;
+/* background-color: white; */
+}
+
+.tab #b2.active {
+border-bottom: 3px solid #20B2AA;
+/* background-color: white; */
+}   

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .tb1_{
+            border: 1px solid red;
+        }
+        .tb2_{
+            border: 1px solid blue;
+        }
+        .tb3_{
+            border: 1px solid green;
+        }
+        .card{
+            width: 300px;
+            min-width: 280px;
+            padding: 15px 20px;
+            margin: 10px 15px;
+
+            height: fit-content;
+            /* max-height: 400px; */
+            display: inline-block;
+            border-radius: 5px;
+            background: white;
+            transition: all .5s;
+        }
+        .card-container{
+            /* min-height: 150px; */
+            /* height: 300px; */
+            display: flex;
+            padding: 20px;
+            overflow-x:auto;
+        }
+        .card p{
+            margin: 0 !important;
+            color: #707070;
+            font-weight: bolder;
+        }
+        .card-header{
+            padding: 5px;
+        }
+        .card-body{
+            font-size: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            height: 220px;
+            overflow-y: auto;
+        }
+        .hashtags{
+            padding: 7px;
+        }
+        .card:hover{
+            box-shadow: 4px 4px 12px 2px rgba(0,0,0,0.4);
+            transform: scale(1.03);
+        }
+        .faculty-header{
+            border-top:3px double black;
+            border-bottom:3px double black;
+            font-family: 'Oswald',sans-serif;
+            text-align: center;
+            margin-left:5%;
+            margin-right:5%;
+            padding-top:0px;
+            padding-bottom:0px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .faculty-header h2{
+            margin-top: 10px;
+        }
+
+        @media (max-width: 520px){
+            .card{
+                min-width: 260px;
+            }
+        }
+        @media (min-width:920px){
+            ::-webkit-scrollbar
+            {
+                width:5px;
+                height: 10px;
+            }
+            ::-webkit-scrollbar-track
+            {
+                border-radius:0px;  
+                /* box-shadow: inset 0 0 5px #bdbdbd; */
+                box-shadow:inset 0 0 5px rgb(114, 114, 114);
+            }
+            ::-webkit-scrollbar-thumb
+           {
+               background: #b8b8b8;
+               border-width:20px;
+               width: 5px;
+           }
+           ::-webkit-scrollbar-thumb:hover
+           {
+               background-color: rgb(163, 163, 117);
+               
+           }
+        }
+        .new-bullet{   /*if time (= currentTime-arrivalTime) <24 hour then display:block else display:none*/
+            color: red;
+            font-size: 22px;
+            position: relative;
+            top: 2px;
+            /* margin-right: -2px; */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="faculty-header">
+                <h2>Notice & Updates</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row tb1" style="background-color: #f5f4f4;">
+                <div class="container"style="background-color: whitesmoke;" >
+                    <div class="card-container tb3">
+                        <div class="card tb2">
+                            <div class="card-header">
+                                <span style="float: right;"><img src="calendar-icon.svg" height="24" width="24" alt="calender-icon" title="Add to my Calender" ></span>
+                                
+                                <p> <span class="new-bullet">&bull;</span> New</p>
+                                <p>22 June '19</p>
+                                <p>9.00 - 11.00</p>
+                            </div>
+                            <div class="card-body">
+                                A workshop on android app sponsored by google will be conducted in auditorium hall, interested can register soon.
+                            </div>
+                            <div class="hashtags">
+                                    <a href="#" id="">#workshop</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#google</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#android-app-development</a> &nbsp;&nbsp;    
+                            </div>
+                        </div>
+                        <div class="card tb2">
+                            <div class="card-header">
+                                <span style="float: right;"><img src="calendar-icon.svg" height="24" width="24"  alt="calender-icon"></span>
+                                <p><span class="new-bullet">&bull;</span> New</p>
+                                <p>22 June '19</p>
+                                <p>9.00 - 11.00</p>
+                            </div>
+                            <div class="card-body">
+                                A workshop on android app sponsored by google will be conducted in auditorium hall, interested can register soon.
+                            </div>
+                            <div class="hashtags">
+                                    <a href="#" id="">#workshop</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#google</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#android-app-development</a> &nbsp;&nbsp;    
+                            </div>
+                        </div>
+                        <div class="card tb2">
+                            <div class="card-header">
+                                <span style="float: right;"><img src="calendar-icon.svg" height="24" width="24"  alt="calender-icon"></span>
+                                <p><span class="new-bullet">&bull;</span> New</p>
+                                <p>22 June '19</p>
+                                <p>9.00 - 11.00</p>
+                            </div>
+                            <div class="card-body">
+                                A workshop on android app sponsored by google will be conducted in auditorium hall, interested can register soon.
+                            </div>
+                            <div class="hashtags">
+                                    <a href="#" id="">#workshop</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#google</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#android-app-development</a> &nbsp;&nbsp;    
+                            </div>
+                        </div>
+                        <div class="card tb2">
+                            <div class="card-header">
+                                <span style="float: right;"><img src="calendar-icon.svg" height="24" width="24"  alt="calender-icon"></span>
+                                <p><span class="new-bullet">&bull;</span> New</p>
+                                <p>22 June '19</p>
+                                <p>9.00 - 11.00</p>
+                            </div>
+                            <div class="card-body">
+                                A workshop on android app sponsored by google will be conducted in auditorium hall, interested can register soon.
+                            </div>
+                            <div class="hashtags">
+                                    <a href="#" id="">#workshop</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#google</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#android-app-development</a> &nbsp;&nbsp;    
+                            </div>
+                        </div>
+                        <div class="card tb2">
+                            <div class="card-header">
+                                <span style="float: right;"><img src="calendar-icon.svg" height="24" width="24"  alt="calender-icon"></span>
+                                <p>New</p>
+                                <p>22 June '19</p>
+                                <p>9.00 - 11.00</p>
+                            </div>
+                            <div class="card-body">
+                                A workshop on android app sponsored by google will be conducted in auditorium hall, interested can register soon.
+                                register soon.
+                            </div>
+                            <div class="hashtags">
+                                    <a href="#" id="">#workshop</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#google</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#android-app-development</a> &nbsp;&nbsp;    
+                            </div>
+                        </div>
+                        <div class="card tb2">
+                            <div class="card-header">
+                                <span style="float: right;"><img src="calendar-icon.svg" height="24" width="24"  alt="calender-icon"></span>
+                                <p>New</p>
+                                <p>22 June '19</p>
+                                <p>9.00 - 11.00</p>
+                            </div>
+                            <div class="card-body">
+                                A workshop on android app sponsored by google will be conducted in auditorium hall, interested can register soon.
+                                A workshop on android app sponsored by google will be conducted in auditorium hall, interested can register soon.
+                            </div>
+                            <div class="hashtags">
+                                    <a href="#" id="">#workshop</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#google</a> &nbsp;&nbsp;
+                                    <a href="#" id="">#android-app-development</a> &nbsp;&nbsp;    
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
