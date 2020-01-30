@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bootstrap4.css">
+    <link rel="stylesheet" href="menu_style.css">
+
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body >
+            <div class="container-fluid container-dim">
+            <div class="row" id="row-top-margin">
+                <!-- image start!-->
+                <div class="logo-container" >
+                    <img  class="logo"  src="img/logo.png" alt="logo_image" width="100"  >
+                </div>
+                <!--image end-->
+
+                <!--college Name start-->
+                <div class="college_name">
+                    <h4 class="college-name-text">PONDICHERRY</h4><br>
+                    <h4 class="college-name-text">ENGINEERING</h4><br>
+                    <h4 class="college-name-text">COLLEGE</h4>
+                </div>
+                <!--College Name End-->
+
+                <!--department name start-->
+                <div class="dept-name" id="dept-name">
+                        <h4 class="dept-of">DEPARTMENT <i>of</i></h4>
+                        <h4 class="dept-name-text">Computer Science and Engineering</h4>
+                </div>
+                <!--department name end-->
+
+                <!-- Search Box  start-->
+                <div class="search-box float-right" style="position: absolute;right: 20px">
+                    <form>
+                            <input type="text" placeholder="Search">
+                            <img src="img/search-icon.png">
+                    </form>
+
+                </div>
+                <!-- search Box End -->
+
+                <!-- Adding hamburger menu start
+                <div id="nav-icon2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </div> -->
+
+                <nav class="menu-nav">
+                    <a href="#" id="overlay">
+                    <div class="menu-icon"></div>
+                    </a>
+                    <div class="menu" id="menu" style="display:none;">
+                    <!-- <ul>
+                        <li>
+                            <a href="#">About</a>
+                            <a href="#">Work</a>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul> -->
+
+                    <div class="container">
+                        <div class="row menu-row" >
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>
+                                        <a href="#">IIS</a>
+                                        <a href="#">Placement</a>
+                                        <a href="#">Resource</a>
+                                        <a href="#">Alumni</a>
+                                     
+                                    </li>
+                                </ul>
+            
+                            </div>
+                            <!-- -->
+                            <div class="col-md-4">
+                                <hr class="d-block d-md-none " style="border-color: aliceblue;"> 
+                                <ul>
+                                    <li>
+                                        <a href="#">About</a>
+                                        <a href="#">Gallery</a>
+                                        <a href="#">On Campus</a>
+                                        <a href="#">Committes</a>
+                                        <a href="#">Cells</a>
+                                        <a href="#">Club</a>
+                                        <a href="#">Chapters</a>
+                                        <a href="#">Academics</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--  -->
+                            <div class="col-md-4">
+                                <ul>
+                                    <hr class="d-block d-md-none" style="border-color: aliceblue;">
+                                    <li>
+                                        <a href="#">Hostel</a>
+                                        <a href="#">Library</a>
+                                        <a href="#">Pec Newsletter</a>
+                                        <a href="#">About</a>
+                                    
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </nav>
+                <!-- hamburger menu end -->
+
+
+
+
+            </div>
+
+
+        </div>
+<hr style="margin: 0 2%;border-width: 2px;">
+
+<script>
+    $( "#overlay" ).click(function() {
+     $( ".menu" ).slideToggle( "fast", function() {
+       // Animation complete.
+     });
+   });
+</script>
+
+</body>
+</html>
