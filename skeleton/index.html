@@ -8,22 +8,20 @@
     <title>Skeleton</title>
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/bootstrap4.css">
-    <link rel="stylesheet" href="css/new-menu.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/Material-Icons.css">
-    <link rel="stylesheet" href="css/bootstrap4.css">
+    <link rel="stylesheet" href="css/material-icons.css">
     <script src="js/jquery.min.js"></script>    
     <script src="js/materialize.min.js"></script>
     <script src="js/bootstrap4.js"></script>
-
+    <script src="js/menu.js"></script>
 
     <style>
         .fixed-action-btn {
             right: 98%;
             left: 2%;
         }
-    
         .floatbtn a {
             width: 200px;
             border-radius: 5px;
@@ -36,31 +34,31 @@
 </head>
 
 <body>
-    <div class="fixed-action-btn" style="right:99%;
-                left: 2%;z-index:4">
-        <a class="btn-floating btn-large">
-            <i class="material-icons" id="iconbtn" style="font-size:40px">expand_less</i>
-        </a>
-        <ul class="floatbtn">
-            <li><a href="../home/" class="btn-floating white"
-                    style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Home</a></li>
-            <li><a href="../newsupdate/" class="btn-floating white"
-                    style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Notice &
-                    Updates</a></li>
-            <li><a href="../articles/" class="btn-floating white"
-                    style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Articles</a>
-            </li>
-            <li><a href="../overview/" class="btn-floating white"
-                    style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Overview</a>
-            </li>
-            <li><a href="../facultylist/" class="btn-floating white"
-                    style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Faculty</a>
-            </li>
-            <li><a href="../courses/" class="btn-floating white"
-                    style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Courses &
-                    Curriculum</a></li>
-        </ul>
-    </div>
+<floatbtn class="fixed-action-btn" style="right:99%;
+            left: 2%;z-index:4">
+    <a class="btn-floating btn-large">
+        <i class="material-icons" id="iconbtn" style="font-size:40px">expand_less</i>
+    </a>
+    <ul class="floatbtn">
+        <li><a href="../home/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Home</a></li>
+        <li><a href="../newsupdate/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Notice &
+                Updates</a></li>
+        <li><a href="../articles/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Articles</a>
+        </li>
+        <li><a href="../overview/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Overview</a>
+        </li>
+        <li><a href="../facultylist/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Faculty</a>
+        </li>
+        <li><a href="../courses/" class="btn-floating white"
+                style=" width:200px; border-radius:5px;color:black;text-align:center;text-decoration:none">Courses &
+                Curriculum</a></li>
+    </ul>
+</floatbtn>
 <header>
     <div class="container-fluid container-dim">
         <div class="row" id="row-top-margin">
@@ -92,13 +90,14 @@
                     <i class="material-icons" style="font-size: 43px;margin-top:30px;">search</i>
                 </form>
             </div>
-
             <!-- <div class="menu-nav"> -->
+            <a data-toggle="collapse" href="#collapseMenu">
                 <div class="container" id="overlay" onclick="this.classList.toggle('change')" style="position: absolute;right:30px;z-index:6">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
+            </a>
                 <!-- <div class="menu" id="menu" style="display:none;">
                     <div class="container">
                         <div class="search-flex"
@@ -154,26 +153,55 @@
                         </div>
                     </div>
                 </div> -->
-            
+
             <!-- </div> -->
             <!-- hamburger menu end mobile menu start -->
 
-            <div id="m_ham" style="background-color:#fff;border-radius: 4px;position: fixed;bottom: 20px; right: 30px;z-index:6" onclick="this.classList.toggle('change')">
-                <div class="mbar1"></div>
-                <div class="mbar2"></div>
-                <div class="mbar3"></div>
+            <a data-toggle="collapse" href="#collapseMenu">
+                <div id="m_ham" style="background-color:transparent;border-radius: 4px;position: fixed;bottom: 20px; right: 30px;z-index:6" onclick="this.classList.toggle('change')">
+                    <div class="mbar1"></div>
+                    <div class="mbar2"></div>
+                    <div class="mbar3"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <hr style="margin: 0 2%;border-width: 2px;box-shadow: 0 3 6 #0003">
+</header>
+<div class="pec-menu collapse" id="collapseMenu">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-6" id="menu-col-1">
+                <ul>
+                    <li>IIS</li>
+                    <li>Placement</li>
+                    <li>Research</li>
+                    <li>Admission</li>
+                    <li>Academics</li>
+                    <li>Alumni</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6" id="menu-col-2">
+                <ul>
+                    <li onmouseover="menu('about')">About</li>
+                    <li onmouseover="menu('gallery')">Gallery</li>
+                    <li onmouseover="menu('oncampus')">On&nbsp;Campus<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
+                    <li onmouseover="menu('departments')">Departments<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
+                    <li onmouseover="menu('administration')">Administration</li>
+                    <li onmouseover="menu('teqip')">TEQIP</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4" id="menu-col-3">
+                <p style="font-size:18px;line-height:1.5">Pondicherry Engineering College (PEC) is an Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan. It is an autonomous Institution for the purposes of administration, staff recruitment and College development and is managed by a Board of Governors.</p>
+            </div>
+            <div class="col-lg-3" id="menu-col-4">
+                <img src="college-img" alt="college-img">
             </div>
         </div>
-
-
     </div>
-    <hr style="margin: 0 2%;border-width: 2px;box-shadow: 0 3 6 rgba(0, 0, 0, 0.16);">
-
-    <!-- <script src="js/header-menu.js"></script> -->
-
-</header>
+</div>
 <main>
-    
+    <!--enter main content here-->
 </main>
 <footer>
     <div class="foot">
