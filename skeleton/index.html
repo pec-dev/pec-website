@@ -15,7 +15,7 @@
     <script src="js/jquery.min.js"></script>    
     <script src="js/materialize.min.js"></script>
     <script src="js/bootstrap4.js"></script>
-    <script src="js/menu.js"></script>
+    <script defer src="js/menu.js"></script>
 
     <style>
         .fixed-action-btn {
@@ -34,6 +34,8 @@
 </head>
 
 <body>
+    
+
 <floatbtn class="fixed-action-btn" style="right:99%;
             left: 2%;z-index:4">
     <a class="btn-floating btn-large">
@@ -183,14 +185,15 @@
             </div>
             <div class="col-lg-3 col-md-4 col-6" id="menu-col-2">
                 <ul>
-                    <li onmouseover="menu('about')">About</li>
-                    <li onmouseover="menu('gallery')">Gallery</li>
-                    <li onmouseover="menu('oncampus')">On&nbsp;Campus<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
-                    <li onmouseover="menu('departments')">Departments<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
-                    <li onmouseover="menu('administration')">Administration</li>
-                    <li onmouseover="menu('teqip')">TEQIP</li>
+                    <li class="menu2" onmouseover="menu(this,'about')">About</li>
+                    <li class="menu2" onmouseover="menu(this,'gallery')">Gallery</li>
+                    <li class="menu2" onmouseover="menu(this,'oncampus')">On&nbsp;Campus<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
+                    <li class="menu2" onmouseover="menu(this,'departments')">Departments<i class="material-icons" style="font-size:15px;margin-top:12px;float:right">navigate_next</i></li>
+                    <li class="menu2" onmouseover="menu(this,'administration')">Administration</li>
+                    <li class="menu2" onmouseover="menu(this,'teqip')">TEQIP</li>
                 </ul>
             </div>
+
             <div class="col-lg-3 col-md-4" id="menu-col-3">
                 <p style="font-size:18px;line-height:1.5">Pondicherry Engineering College (PEC) is an Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan. It is an autonomous Institution for the purposes of administration, staff recruitment and College development and is managed by a Board of Governors.</p>
             </div>

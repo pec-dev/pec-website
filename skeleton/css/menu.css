@@ -53,6 +53,14 @@
     /* border-top: 3px solid #2e8690; */
     border-bottom: 3px solid #2e8690;
 }
+.menu2{
+    text-decoration: none;
+    color: #000;
+}
+.active-m2{
+    text-decoration:underline;
+    color:#2e8690;
+}
 
 #menu-col-1{
     font-weight:700;
