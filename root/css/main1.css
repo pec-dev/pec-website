@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .watermark{
     float: right;
     /* z-index: -999; */
@@ -27,3 +29,27 @@
     color:#2e8690;
 }
   
+
+.admission{
+    padding: 5px;
+    margin-left: 3vw;
+}
+
+.admission div{
+    padding:10px 20px;
+    font-family: Roboto;
+}
+
+.admission h3{
+    color: #2e8690;
+    font-family: Oswald;
+    font-size: 32px;
+}
+
+
+/* for small screen */
+@media(max-width:576px){
+    .admission h3{
+        font-size: 24px;
+    }
+}
